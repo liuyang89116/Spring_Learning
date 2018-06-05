@@ -3,7 +3,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <!--通过 bean 标签设置类的信息-->
-  <bean id="helloService" class="com.yang.demo.HelloServiceImpl"></bean>
+    <!--通过 bean 标签设置类的信息-->
+    <bean id="helloService" class="com.yang.demo.HelloServiceImpl">
+        <property name="info" value="Kobe Bryant"></property>
+    </bean>
 
 </beans>
