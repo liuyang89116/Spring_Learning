@@ -20,4 +20,5 @@ public class HelloServiceTest {
         HelloService helloService = (HelloService) context.getBean("helloService");
         helloService.sayHello();
     }
+
 }
