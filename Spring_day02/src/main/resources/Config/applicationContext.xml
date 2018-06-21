@@ -18,4 +18,10 @@
     <!--实例工厂-->
     <bean id="bean3" factory-bean="bean3Factory" factory-method="getBean3"></bean>
     <bean id="bean3Factory" class="com.yang.demo1.Bean3Factory"></bean>
+
+
+    <!-- demo2-->
+    <bean id="customer" class="com.yang.demo2.Customer" scope="prototype"></bean>
+
+
 </beans>
