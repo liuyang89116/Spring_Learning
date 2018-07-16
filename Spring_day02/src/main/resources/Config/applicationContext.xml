@@ -23,5 +23,9 @@
     <!-- demo2-->
     <bean id="customer" class="com.yang.demo2.Customer" scope="prototype"></bean>
 
+    <!--bean 的生命周期-->
+    <bean id="product" class="com.yang.demo2.Product" init-method="setup" destroy-method="teardown">
+        <property name="name" value="Messi"></property>
+    </bean>
 
 </beans>
