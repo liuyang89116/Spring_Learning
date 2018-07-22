@@ -28,4 +28,10 @@
         <property name="name" value="Messi"></property>
     </bean>
 
+    <bean id="customerService" class="com.yang.demo3.CustomerServiceImpl" init-method="setup" destroy-method="teardown">
+        <property name="name" value="Messi"></property>
+    </bean>
+
+    <bean class="com.yang.demo3.MyBeanPostProcessor"></bean>
+
 </beans>
