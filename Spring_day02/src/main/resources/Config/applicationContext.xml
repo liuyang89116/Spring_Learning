@@ -34,4 +34,16 @@
 
     <bean class="com.yang.demo3.MyBeanPostProcessor"></bean>
 
+    <!-- demo4-->
+    <!--构造方法注入-->
+    <bean id="car" class="com.yang.demo4.Car">
+        <constructor-arg name="name" value="宝马"></constructor-arg>
+        <constructor-arg name="price" value="10000"></constructor-arg>
+    </bean>
+
+    <bean id="car2" class="com.yang.demo4.Car2">
+        <property name="name" value="保时捷"/>
+        <property name="price" value="30000"/>
+    </bean>
+
 </beans>
